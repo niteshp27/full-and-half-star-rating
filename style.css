@@ -1,0 +1,63 @@
+/*==========================*/
+/*css for half star feature*/
+p.stars {
+  overflow: hidden;
+  zoom: 1;
+}
+p.stars span {
+  width: 95px;
+  height: 15px;
+  position: relative;
+  float: left;
+  
+}
+p.stars span label {
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 95px;
+  height: 0;
+  padding-top: 15px;
+  overflow: hidden;
+}
+p.stars span{background: url("images/star-bg.png");}
+
+p.stars span label.star-05,
+p.stars span label.star-15,
+p.stars span label.star-25,
+p.stars span label.star-35,
+p.stars span label.star-45
+{
+	width:9px;
+}
+
+p.stars span label.star-05{z-index:30; width:9px;}
+p.stars span label.star-10{z-index:29; width:18px;}
+p.stars span label.star-15{z-index:28; width:28px;}
+p.stars span label.star-20{z-index:27; width:37px;}
+p.stars span label.star-25{z-index:26; width:47px;}
+p.stars span label.star-30{z-index:25; width:55px;}
+p.stars span label.star-35{z-index:24; width:66px;}
+p.stars span label.star-40{z-index:23; width:74px;}
+p.stars span label.star-45{z-index:22; width:84px;}
+p.stars span label.star-50{z-index:21; width:93px;}
+
+p.stars span label.star-05:hover, p.stars span label.star-05.active, p.stars span label.star-05:focus,
+p.stars span label.star-15:hover, p.stars span label.star-15.active, p.stars span label.star-15:focus,
+p.stars span label.star-25:hover, p.stars span label.star-25.active, p.stars span label.star-25:focus,
+p.stars span label.star-35:hover, p.stars span label.star-35.active, p.stars span label.star-35:focus,
+p.stars span label.star-45:hover, p.stars span label.star-45.active, p.stars span label.star-45:focus,
+p.stars span .active
+{
+	background:url("images/star-bg-hover.png") repeat-x -1px -1px;
+}
+
+p.stars span label.star-10:hover, p.stars span label.star-10.active, p.stars span label.star-10:focus,
+p.stars span label.star-20:hover, p.stars span label.star-20.active, p.stars span label.star-20:focus,
+p.stars span label.star-30:hover, p.stars span label.star-30.active, p.stars span label.star-30:focus,
+p.stars span label.star-40:hover, p.stars span label.star-40.active, p.stars span label.star-40:focus,
+p.stars span label.star-50:hover, p.stars span label.star-50.active, p.stars span label.star-50:focus
+{
+	background:url("images/star-bg-hover.png") repeat-x -1px -1px;
+}

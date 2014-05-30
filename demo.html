@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="jquery-1.11.1.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<p class="stars">
+	<span>
+		<label class="star-05" data-rate="0.5">0.5</label>
+		<label class="star-10" data-rate="1">1</label>
+		<label class="star-15" data-rate="1.5">1.5</label>
+		<label class="star-20" data-rate="2">2</label>
+		<label class="star-25" data-rate="2.5">2.5</label>
+		<label class="star-30" data-rate="3">3</label>
+		<label class="star-35" data-rate="3.5">3.5</label>
+		<label class="star-40" data-rate="4">4</label>
+		<label class="star-45" data-rate="4.5">4.5</label>
+		<label class="star-50" data-rate="5">5</label>
+	</span>
+</p>
+<script>
+	$(".stars span label").click(function () {
+		$(".stars span label").removeClass("active");
+		$(this).addClass("active");
+		console.log($(this).data("rate"));
+	});
+</script>
+</body>
+</html>
